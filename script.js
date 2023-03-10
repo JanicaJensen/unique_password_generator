@@ -15,7 +15,7 @@ function generatePassword() {
 
  
 
-  var characterNumberPrompt = prompt("Insert desired character length (min 8 - max 128:");
+  var characterNumberPrompt = prompt("Insert desired character length (min 8 - max 128:)");
   var numbersPrompt = confirm("Would you like your password to contain numbers?");
   var uppercasePrompt = confirm("Would you like uppercase letters in your password?");
   var lowercasePrompt = confirm("Would you like lower case letters in your password?");
@@ -37,11 +37,13 @@ function generatePassword() {
     generatedPass = generatedPass.concat(special);
   }
 
-  console.log(generatedPass);
+  
 
-for (var i=0; i < characterNumberPrompt; i++); {
+for (var i=0; i < characterNumberPrompt; i++) {
   userData.push (generatedPass[Math.floor(Math.random() * generatedPass.length)]);
 }
+
+console.log(generatedPass);
 
 return userData.join("");
 }
@@ -50,7 +52,7 @@ return userData.join("");
 function writePassword() {
 
   var password = generatePassword();
-  var passwordText = document.querySelector("password");
+  var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
