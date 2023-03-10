@@ -15,11 +15,24 @@ function generatePassword() {
 
  
 
+  
   var characterNumberPrompt = prompt("Insert desired character length (min 8 - max 128:)");
+  
+  if (characterNumberPrompt < 8) {
+    alert("Password is too short. 📏 ");
+    return "";
+  }
+  if (characterNumberPrompt > 128) {
+    alert("Password is too long. 📏 ");
+    return "";
+  }
+
   var numbersPrompt = confirm("Would you like your password to contain numbers?");
   var uppercasePrompt = confirm("Would you like uppercase letters in your password?");
   var lowercasePrompt = confirm("Would you like lower case letters in your password?");
   var specialPrompt = confirm("Would you like special characters in your password?");
+
+
 
   if (numbersPrompt) {
     generatedPass = generatedPass.concat(number);
