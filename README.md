@@ -7,7 +7,7 @@ This is a password generator that is able to produce passwords including anywher
 ## Usage
 
 ```
-To use the password generator, one must use the link to the live application which can be found here:
+To use the password generator, one must use the link to the live application which can be found here: https://janicajensen.github.io/unique_password_generator/
 
 Upon clicking "Generate Password", the user will be given a series of prompts that ask for details regarding various criteria. Those criteria will be used to generate a password that will be displayed in the main box on the page.
 
@@ -17,7 +17,7 @@ If one desires a password with less than 8 characters or more than 128, the page
 
 ## Appearance
 
-The deployed page can be found at a live link here:
+The deployed page can be found at a live link here: https://janicajensen.github.io/unique_password_generator/
 
 Photos of the project are available here:
 ![Photo showing the password generator](/passwordgenscreenshot1.png)
